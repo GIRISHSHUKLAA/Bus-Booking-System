@@ -56,3 +56,7 @@
 `http://localhost:8080/swagger-ui/`
 
 
+## We will call API using Swagger UI you can use postman also
+
+`http://localhost:8080/swagger-ui/#/I`
+
