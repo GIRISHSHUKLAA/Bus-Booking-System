@@ -1,8 +1,7 @@
-# iBus  REST API for Bus Reservation System Portal 
-<img  src="https://media1.giphy.com/media/j375yFxei6JtEcDA65/giphy.gif?cid=6c09b952j6fzqoryrmfw9um982tnnvbg9v3wmxffm828lkol&rid=giphy.gif&ct=s" width="93%" height="420px" /><img align="right"  src="https://user-images.githubusercontent.com/100846744/200823463-827828d9-f686-4bc4-a9d5-eb1df69472e7.png"/>
+# REST API for Bus Booking System 
 
-* We have developed this REST API for a Bus Reservation System Portal Application. This API performs all the fundamental CRUD operations of any Bus Reservation Application platform with user validation at every step.
-* This project is developed by team of 5 Back-end Developers during project week in Masai School. 
+* Used a REST API for a Bus Booking System Application. This API performs all the fundamental CRUD operations of any Bus Reservation Application platform with user validation at every step.
+ 
 ## Tech Stack
 
 * Java
@@ -34,34 +33,27 @@
     * Viewing list of available buses and booking a reservation
     * Only logged in user can access his reservations, profile updation and other features.
 
-## Contributors
-
-* [@Arshiya](https://github.com/arshiya786-af)
-* [@Mohammad](https://github.com/ahtishamkhan5678)
-* [@Lalit Singh](https://github.com/lalitsingh28)
-* [@Lakhan](https://github.com/lakhan1122)
-* [@Paras Aghi](https://github.com/PARAS-AGHI)
 
 ## Installation & Run
 
-* Before running the API server, you should update the database config inside the [application.properties](https://github.com/arshiya786-af/afraid-stew-8500/tree/main/BusReservationSystemPortal/src/main/resources) file. 
+* Before running the API server, you should update the database. 
 * Update the port number, username and password as per your local database config.
 
 ```
-    server.port=8888
+    server.port=8080
 
-    spring.datasource.url=jdbc:mysql://localhost:3306/ibusdb
+    spring.datasource.url=jdbc:mysql://localhost:3306/busBooking
     spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-    spring.datasource.username=root
-    spring.datasource.password=root
+    spring.datasource.username=your_db_username
+    spring.datasource.password=your_db_password
 
 ```
 
 ## API Root Endpoint
 
-`https://localhost:8888/`
+`https://localhost:8080/`
 
-`http://localhost:8888/swagger-ui/`
+`http://localhost:8080/swagger-ui/`
 
 
 ## API Module Endpoints
@@ -102,7 +94,7 @@
 
 ### Sample API Response for Admin Login
 
-`POST   localhost:8888/login/admin`
+`POST   localhost:8080/login/admin`
 
 * Sample Request Body
 
@@ -149,33 +141,3 @@
 ![Screenshot (286)](https://user-images.githubusercontent.com/100846744/201393212-9f8d839e-a6cd-4d9e-aac3-7cd975d04675.png)
 
 ---
-
-### Reservation Controller
-
----
-
-
-![Screenshot (288)](https://user-images.githubusercontent.com/100846744/201393110-68855185-f04d-4bb8-9af1-9f69bb2ecf5d.png)
-
----
-
-### Route Controller
-
----
-
-![Screenshot (289)](https://user-images.githubusercontent.com/100846744/201393162-8a30069f-039a-4010-9fe9-3864452545a6.png)
-
-
----
-
-### Feedback Controller
-
----
-
-
-![Screenshot (287)](https://user-images.githubusercontent.com/100846744/201393007-95a20ad5-1816-4dc6-8d9c-2ff41c22c450.png)
-
----
-
-
-<img  align="center" src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&amp;color=FF5733&amp;size=20&amp;lines=Thanks!+For+Visiting+On+My+Project!;See+You+Next-Time+Hope+u+like+its...👨🏻‍💻;" style="width: 70%;">
